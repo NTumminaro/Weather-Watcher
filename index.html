@@ -1,49 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <title>Weather Watcher</title>
+    </head>
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<title>Weather Watcher</title>
-</head>
+    <body>
+        <nav class="navbar bg-info">
+            <a class="navbar-brand text-light p-3" href="/"
+                ><h1>Weather Watcher</h1></a
+            >
+        </nav>
 
-<body>
+        <!-- search bar and search history -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <form>
+                        <div class="input-group p-3">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="City Name"
+                                aria-label="City Name"
+                                aria-describedby="basic-addon2"
+								id="sField"
+                            />
+                            <button id="sub" type="submit" class="btn btn-primary">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+					<ul id="history" class="container-fluid">
+					</ul>
+                </div>
+                <!-- API returned info -->
+                <div id="forcast" class="col-9 py-2">
+                </div>
+            </div>
+        </div>
 
-	<header>
-		<h1>Weather Watcher</h1>
-	</header>
-
-	<!-- search bar and search history -->
-	<div class="container ml-0">
-		<div class="row">
-			<div class="col-3">
-				<form>
-					<div class="form-group">
-						<label for="citySearch">Search for a city:</label>
-						<input type="text" class="form-control" id="citySearch" placeholder="City Name">
-					</div>
-					<button type="submit" class="btn btn-primary">Search</button>
-				</form>
-			</div>
-				<!-- API returned info -->
-			<div class="col-9">
-				<h2>testing testing 123</h2>
-			</div>
-		</div>
-	</div>
-
-	<!-- API returned info -->
-	<div>
-
-	</div>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="./assets/js/script.js"></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
