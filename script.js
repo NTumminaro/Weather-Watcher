@@ -61,7 +61,7 @@ function searchPrep(searchData) {
     let sameDay;
     // api call for single day weather
     let queryDay =
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&appid=" +
         key +
